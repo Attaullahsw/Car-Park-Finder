@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:padding="8dp"
+            android:text="Add Vehicle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="Car Name:" />
+
+        <EditText
+            android:id="@+id/edt_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_edittext"
+            android:hint="eg: Honda 2017"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:paddingLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="Car Number:" />
+
+        <EditText
+            android:id="@+id/edt_car_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_edittext"
+            android:hint="eg: AB4614"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:paddingLeft="10dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:text="Cancel"
+            android:background="@android:color/holo_red_dark"
+             />
+
+
+        <Button
+            android:id="@+id/btn_add_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:text="Add"
+            android:background="@color/colorPrimaryDark"
+             />
+
+
+    </LinearLayout>
+
+</LinearLayout>

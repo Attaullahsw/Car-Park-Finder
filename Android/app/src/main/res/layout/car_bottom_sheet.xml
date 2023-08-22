@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_directions_car_24" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="Add Vehicle"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/close_bottom_sheet_park"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_close_24_blue"
+            app:tint="@color/colorPrimaryDark" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <ListView
+        android:id="@+id/list_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:id="@+id/btn_add_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle_rectangle_edittext"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Add Vehicle"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>
